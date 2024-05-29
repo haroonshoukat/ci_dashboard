@@ -167,9 +167,9 @@
           </li>
         </ul>
       </nav> -->
-      <?php
-                  $this->load->view('partials/sidebar');
-                  ?>
+    <?php
+    $this->load->view('partials/sidebar');
+    ?>
     <!-- partial -->
     <div class="container-fluid page-body-wrapper">
       <!-- partial:../../partials/_navbar.html -->
@@ -369,23 +369,23 @@
                     ?>
       <div class="container">
         <div class="row justify-content-center">
-        <!DOCTYPE html>
-<html lang="en">
+          <!DOCTYPE html>
+          <html lang="en">
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Corona Admin</title>
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="<?php echo base_url(); ?>/assets/css/style.css">
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="<?php echo base_url(); ?>/assets/images/favicon.png" />
-<!-- 
+          <head>
+            <!-- Required meta tags -->
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            <title>Corona Admin</title>
+            <!-- Bootstrap CSS -->
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+            <!-- Font Awesome -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+            <!-- Custom CSS -->
+            <link rel="stylesheet" href="<?php echo base_url(); ?>/assets/css/style.css">
+            <!-- Favicon -->
+            <link rel="shortcut icon" href="<?php echo base_url(); ?>/assets/images/favicon.png" />
+            <!-- 
   <style>
     /* Neon Lights and Beautiful Form Styling */
     
@@ -468,87 +468,88 @@
 
 
   </style> -->
-</head>
+          </head>
 
-<body>
-<style>
-    ::placeholder {
-        color: white !important;
-        opacity: 1 !important; /* For Firefox */
-    }
-</style>
+          <body>
+            <style>
+              ::placeholder {
+                color: white !important;
+                opacity: 1 !important;
+                /* For Firefox */
+              }
+            </style>
 
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <form class="forms-sample" id="myForm" action="<?php echo base_url('Home/update/' . $item->id);?>" method="post" style="margin-top: 100px">
-              <h2 class="text-center mb-4">UPDATE USER</h2>
-                <div class="row">
-                    <div class="col-md-6">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-md-8">
+                  <form class="forms-sample" id="myForm" action="<?php echo base_url('Home/update/' . $item->id); ?>" method="post" style="margin-top: 100px">
+                    <h2 class="text-center mb-4">UPDATE USER</h2>
+                    <div class="row">
+                      <div class="col-md-6">
                         <div class="form-group">
-                            <label for="exampleInputUsername1">First Name</label>
-                            <input type="text" class="form-control" id="exampleInputUsername1" placeholder="First name" name="firstname" value="<?php echo $item->firstname;?>">
+                          <label for="exampleInputUsername1">First Name plz</label>
+                          <input type="text" class="form-control" id="exampleInputUsername1" placeholder="First name" name="firstname" value="<?php echo $item->firstname; ?>">
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputPosition1">Position</label>
-                            <input type="text" class="form-control" id="exampleInputPosition1" placeholder="Position" name="Position" value="<?php echo $item->Position;?>">
+                          <label for="exampleInputPosition1">Position</label>
+                          <input type="text" class="form-control" id="exampleInputPosition1" placeholder="Position" name="Position" value="<?php echo $item->Position; ?>">
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputAge1">Age</label>
-                            <input type="number" class="form-control" id="exampleInputAge1" placeholder="Age" name="Age" value="<?php echo $item->Age;?>">
+                          <label for="exampleInputAge1">Age</label>
+                          <input type="number" class="form-control" id="exampleInputAge1" placeholder="Age" name="Age" value="<?php echo $item->Age; ?>">
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputSalary1">Salary</label>
-                            <input type="text" class="form-control" id="exampleInputSalary1" placeholder="Salary" name="Salary" value="<?php echo $item->Salary;?>">
+                          <label for="exampleInputSalary1">Salary</label>
+                          <input type="text" class="form-control" id="exampleInputSalary1" placeholder="Salary" name="Salary" value="<?php echo $item->Salary; ?>">
                         </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="exampleInputGender">Gender</label>
+                          <select class="form-control" id="exampleInputGender" name="Gender">
+                            <option value="Female">Female</option>
+                            <option value="Male">Male</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputOffice1">Office</label>
+                          <input type="text" class="form-control" id="exampleInputOffice1" placeholder="Office" name="Office" value="<?php echo $item->Office; ?>">
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputStartDate1">Start Date</label>
+                          <input type="date" class="form-control" id="exampleInputStartDate1" name="Startdate" value="<?php echo $item->Startdate; ?>">
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputExtn1">Extn.</label>
+                          <input type="text" class="form-control" id="exampleInputExtn1" placeholder="Extn." name="Extn" value="<?php echo $item->Extn; ?>">
+                        </div>
+                      </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="exampleInputGender">Gender</label>
-                            <select class="form-control" id="exampleInputGender" name="Gender">
-                                <option value="Female">Female</option>
-                                <option value="Male">Male</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleInputOffice1">Office</label>
-                            <input type="text" class="form-control" id="exampleInputOffice1" placeholder="Office" name="Office" value="<?php echo $item->Office;?>">
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleInputStartDate1">Start Date</label>
-                            <input type="date" class="form-control" id="exampleInputStartDate1" name="Startdate" value="<?php echo $item->Startdate;?>">
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleInputExtn1">Extn.</label>
-                            <input type="text" class="form-control" id="exampleInputExtn1" placeholder="Extn." name="Extn" value="<?php echo $item->Extn;?>">
-                        </div>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Email Address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email address" name="Email" value="<?php echo $item->firstname; ?>">
                     </div>
+                    <div class="form-check form-check-flat form-check-primary">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Remember me</label>
+                    </div>
+                    <div class="text-center mt-4">
+                      <button type="submit" class="btn btn-primary mr-2">Submit</button>
+                      <button type="button" class="btn btn-dark">Cancel</button>
+                    </div>
+                  </form>
                 </div>
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Email Address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email address" name="Email" value="<?php echo $item->firstname;?>">
-                </div>
-                <div class="form-check form-check-flat form-check-primary">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Remember me</label>
-                </div>
-                <div class="text-center mt-4">
-                    <button type="submit" class="btn btn-primary mr-2">Submit</button>
-                    <button type="button" class="btn btn-dark">Cancel</button>
-                </div>
-            </form>
+              </div>
+            </div>
+
+
         </div>
-    </div>
-</div>
+      </div>
 
-
-    </div>
-  </div>
-
-  <!-- Bootstrap Bundle with Popper -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
-  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+      <!-- Bootstrap Bundle with Popper -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+      <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </body>
 <script>
   document.addEventListener("DOMContentLoaded", function() {
@@ -557,57 +558,57 @@
 
       // Display SweetAlert confirmation dialog
       swal({
-        title: "Are you sure?",
-        text: "Once submitted, you won't be able to revert this!",
-        icon: "warning",
-        buttons: true,
-        dangerMode: true,
-      })
-      .then((willSubmit) => {
-        if (willSubmit) {
-          // If user confirms, submit the form
-          this.submit();
-        } else {
-          // If user cancels, do nothing
-          swal("Your update is safe!", {
-            icon: "info",
-          });
-        }
-      });
+          title: "Are you sure?",
+          text: "Once submitted, you won't be able to revert this!",
+          icon: "warning",
+          buttons: true,
+          dangerMode: true,
+        })
+        .then((willSubmit) => {
+          if (willSubmit) {
+            // If user confirms, submit the form
+            this.submit();
+          } else {
+            // If user cancels, do nothing
+            swal("Your update is safe!", {
+              icon: "info",
+            });
+          }
+        });
     });
   });
 </script>
 
 </html>
 
-        </div>
-      </div>
+</div>
+</div>
 
 
-      <!-- main-panel ends -->
-    </div>
-    <!-- page-body-wrapper ends -->
-  </div>
-  <!-- container-scroller -->
-  <!-- plugins:js -->
-  <script src="<?php echo base_url(); ?>assets/vendors/js/vendor.bundle.base.js"></script>
-  <!-- endinject -->
-  <!-- Plugin js for this page -->
-  <script src="<?php echo base_url(); ?>assets/vendors/select2/select2.min.js"></script>
-  <script src="<?php echo base_url(); ?>assets/vendors/typeahead.js/typeahead.bundle.min.js"></script>
-  <!-- End plugin js for this page -->
-  <!-- inject:js -->
-  <script src="<?php echo base_url(); ?>assets/js/off-canvas.js"></script>
-  <script src="<?php echo base_url(); ?>assets/js/hoverable-collapse.js"></script>
-  <script src="<?php echo base_url(); ?>assets/js/misc.js"></script>
-  <script src="<?php echo base_url(); ?>assets/js/settings.js"></script>
-  <script src="<?php echo base_url(); ?>assets/js/todolist.js"></script>
-  <!-- endinject -->
-  <!-- Custom js for this page -->
-  <script src="<?php echo base_url(); ?>assets/js/file-upload.js"></script>
-  <script src="<?php echo base_url(); ?>assets/js/typeahead.js"></script>
-  <script src="<?php echo base_url(); ?>assets/js/select2.js"></script>
-  <!-- End custom js for this page -->
+<!-- main-panel ends -->
+</div>
+<!-- page-body-wrapper ends -->
+</div>
+<!-- container-scroller -->
+<!-- plugins:js -->
+<script src="<?php echo base_url(); ?>assets/vendors/js/vendor.bundle.base.js"></script>
+<!-- endinject -->
+<!-- Plugin js for this page -->
+<script src="<?php echo base_url(); ?>assets/vendors/select2/select2.min.js"></script>
+<script src="<?php echo base_url(); ?>assets/vendors/typeahead.js/typeahead.bundle.min.js"></script>
+<!-- End plugin js for this page -->
+<!-- inject:js -->
+<script src="<?php echo base_url(); ?>assets/js/off-canvas.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/hoverable-collapse.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/misc.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/settings.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/todolist.js"></script>
+<!-- endinject -->
+<!-- Custom js for this page -->
+<script src="<?php echo base_url(); ?>assets/js/file-upload.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/typeahead.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/select2.js"></script>
+<!-- End custom js for this page -->
 </body>
 
 </html>
